@@ -1,0 +1,6 @@
+swarms
+swarms-memory
+python-dotenv
+litellm
+sqlalchemy
+aiosqlite
