@@ -12,7 +12,7 @@ project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if project_root not in sys.path:
     sys.path.append(project_root)
 
-from db.db_service import style_analysis_service
+from ..db.style_service import style_analysis_service
 
 load_dotenv()
 
@@ -57,17 +57,28 @@ tools = [
 loader = AgentLoader()
 current_dir = os.path.dirname(__file__)
 agent_md = os.path.join(current_dir,"prompt", "style_analyzer.md")
-# Initialize ChromaDB memory
-# chromadb_memory = ChromaDB(
-#     metric="cosine",
-#     output_dir="finance_agent_rag",
-# )
 
-analyze_style_agent = loader.load_agent_from_markdown(
-    file_path=agent_md,
-    tools_list_dictionary=tools,
-    # long_term_memory = chromadb_memory,
-)
+
+def get_analyze_style_agent():
+    """
+    创建并返回analyze_style_agent实例
+    
+    Returns:
+        Agent: analyze_style_agent实例
+    """
+    # Initialize ChromaDB memory
+    # chromadb_memory = ChromaDB(
+    #     metric="cosine",
+    #     output_dir="finance_agent_rag",
+    # )
+    
+    analyze_style_agent = loader.load_agent_from_markdown(
+        file_path=agent_md,
+        tools_list_dictionary=tools,
+        # long_term_memory = chromadb_memory,
+    )
+    
+    return analyze_style_agent
 
 
 async def save_analysis_result_async(arguments_dict: dict, sample_title: str, sample_content: str):
@@ -141,7 +152,10 @@ def analyze_sample_content(title: str, content: str):
 {content}
 """
     
-    result = analyze_style_agent.run(task)
+    # 获取agent实例
+    agent = get_analyze_style_agent()
+    
+    result = agent.run(task)
     result = result.split("StyleAnalyzer: ")[1]
 
     import ast

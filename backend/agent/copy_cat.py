@@ -49,11 +49,21 @@ loader = AgentLoader()
 current_dir = os.path.dirname(__file__)
 agent_md = os.path.join(current_dir,"prompt", "copy_cat.md")
 
-# 创建Agent实例
-copycat_agent = loader.load_agent_from_markdown(
-    file_path=agent_md,
-    tools_list_dictionary=tools,
-)
+
+def get_copycat_agent():
+    """
+    创建并返回copycat_agent实例
+    
+    Returns:
+        Agent: copycat_agent实例
+    """
+    # 创建Agent实例
+    copycat_agent = loader.load_agent_from_markdown(
+        file_path=agent_md,
+        tools_list_dictionary=tools,
+    )
+    
+    return copycat_agent
 
 
 def run_copycat_agent(style_info, user_task):
@@ -86,8 +96,11 @@ def run_copycat_agent(style_info, user_task):
 请根据以上风格信息和用户其余需求，生成符合该风格的全新原创小红书种草文案。
 """
 
+    # 获取agent实例
+    agent = get_copycat_agent()
+    
     # 运行Agent
-    result = copycat_agent.run(full_task)
+    result = agent.run(full_task)
 
     return result
 

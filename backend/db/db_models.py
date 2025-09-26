@@ -3,13 +3,13 @@
 定义风格分析结果的数据结构
 """
 
-from sqlalchemy import create_engine, Column, Integer, String, Text, DateTime
+from sqlalchemy import create_engine, Column, Integer, String, Text, DateTime, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
 from datetime import datetime
 import os
 # 异步支持相关
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import sessionmaker, relationship
 Base = declarative_base()
 
 class StyleAnalysis(Base):
@@ -40,6 +40,66 @@ class StyleAnalysis(Base):
             'category': self.category,
             'sample_title': self.sample_title,
             'sample_content': self.sample_content,
+            'created_at': self.created_at.isoformat() if self.created_at else None
+        }
+
+
+class Topic(Base):
+    """
+    内容选题模型
+    """
+    __tablename__ = 'topics'
+    
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    name = Column(String(255), nullable=False)
+    level = Column(Integer, nullable=False)  # 1, 2, 3 分别代表一级、二级、三级选题
+    parent_id = Column(Integer, ForeignKey('topics.id'), nullable=True)  # 父级选题ID
+    description = Column(Text, nullable=True)
+    created_at = Column(DateTime, default=datetime.now)
+    
+    # 关系定义
+    parent = relationship("Topic", remote_side=[id], back_populates="children")
+    children = relationship("Topic", back_populates="parent")
+    
+    def __repr__(self):
+        return f"<Topic(name='{self.name}', level={self.level})>"
+        
+    def to_dict(self):
+        """
+        将对象转换为字典格式
+        """
+        return {
+            'id': self.id,
+            'name': self.name,
+            'level': self.level,
+            'parent_id': self.parent_id,
+            'description': self.description,
+            'created_at': self.created_at.isoformat() if self.created_at else None
+        }
+
+
+class TopicStyleAssociation(Base):
+    """
+    选题与风格关联模型
+    """
+    __tablename__ = 'topic_style_associations'
+    
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    topic_id = Column(Integer, ForeignKey('topics.id'), nullable=False)
+    style_id = Column(Integer, ForeignKey('style_analysis.id'), nullable=False)
+    created_at = Column(DateTime, default=datetime.now)
+    
+    def __repr__(self):
+        return f"<TopicStyleAssociation(topic_id={self.topic_id}, style_id={self.style_id})>"
+        
+    def to_dict(self):
+        """
+        将对象转换为字典格式
+        """
+        return {
+            'id': self.id,
+            'topic_id': self.topic_id,
+            'style_id': self.style_id,
             'created_at': self.created_at.isoformat() if self.created_at else None
         }
 

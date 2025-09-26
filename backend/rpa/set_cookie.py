@@ -3,7 +3,7 @@
 用于方便地设置小红书爬虫所需的Cookie
 """
 
-from rpa.config import config_manager
+from ..rpa.config import config_manager
 
 
 def set_cookie():

@@ -3,7 +3,7 @@
 用于初始化SQLite数据库
 """
 
-from db.db_models import init_database
+from .db_models import init_database
 import os
 
 

@@ -3,8 +3,8 @@
 提供对风格分析结果的增删改查操作
 """
 
-from db.db_models import StyleAnalysis, get_session, get_async_session
-from typing import List, Dict, Optional
+from .db_models import StyleAnalysis, get_session, get_async_session
+from typing import List, Optional
 from sqlalchemy.future import select
 
 

@@ -8,7 +8,7 @@ project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if project_root not in sys.path:
     sys.path.append(project_root)
 
-from rpa.config import read_setting
+from ..rpa.config import read_setting
 
 
 async def extract_note_content(note_urls: str):
