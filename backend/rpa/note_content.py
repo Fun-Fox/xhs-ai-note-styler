@@ -8,7 +8,8 @@ project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if project_root not in sys.path:
     sys.path.append(project_root)
 
-from ..rpa.config import read_setting
+from backend.rpa.config import read_setting
+from backend.utils.logger import info, error, warning
 
 
 async def extract_note_content(note_urls: str):
@@ -24,7 +25,7 @@ async def extract_note_content(note_urls: str):
     try:
         from playwright.async_api import async_playwright
     except ImportError:
-        print("错误: 未安装playwright库，请运行 'pip install playwright' 安装")
+        error("未安装playwright库，请运行 'pip install playwright' 安装")
         return []
 
     urls = note_urls.split(' ')
@@ -104,7 +105,7 @@ async def extract_note_content(note_urls: str):
                         return null;
                     }
                 }''')
-                print(note_data)
+                info(f"提取到的笔记数据: {note_data}")
 
                 # 如果通过JS无法获取数据，则尝试直接从页面元素提取
                 if not note_data:
@@ -128,12 +129,12 @@ async def extract_note_content(note_urls: str):
                         'title': note_data['title'],
                         'content': note_data['content']
                     })
-                    print(f"成功提取笔记: {note_data['title']}")
+                    info(f"成功提取笔记: {note_data['title']}")
                 else:
-                    print(f"无法提取笔记内容: {url}")
+                    warning(f"无法提取笔记内容: {url}")
 
             except Exception as e:
-                print(f"处理页面时出错: {url}, 错误: {str(e)}")
+                error(f"处理页面时出错: {url}, 错误: {str(e)}")
                 continue
 
         await browser.close()
@@ -149,7 +150,7 @@ def read_setting():
         dict: 设置信息
     """
     # 这里使用新的配置管理模块
-    from rpa.config import read_setting as config_read_setting
+    from backend.rpa.config import read_setting as config_read_setting
     return config_read_setting()
 
 
@@ -162,10 +163,10 @@ if __name__ == "__main__":
         notes_data = await extract_note_content(example_urls)
 
         for note in notes_data:
-            print(f"链接: {note['url']}")
-            print(f"标题: {note['title']}")
-            print(f"内容: {note['content']}")
-            print("-" * 50)
+            info(f"链接: {note['url']}")
+            info(f"标题: {note['title']}")
+            info(f"内容: {note['content']}")
+            info("-" * 50)
 
 
     # 运行异步函数

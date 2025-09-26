@@ -62,39 +62,39 @@ topic_router = APIRouter(prefix="/api/v1/topic", tags=["风格选题管理"])
 @topic_router.post("/create", response_model=TopicResponse)
 async def create_topic_endpoint(request: TopicCreateRequest):
     """创建新选题"""
-    return await create_topic(request)
+    return  create_topic(request)
 
 @topic_router.get("/get/{topic_id}", response_model=TopicResponse)
 async def get_topic_endpoint(topic_id: int):
     """获取单个选题信息"""
-    return await get_topic(topic_id)
+    return  get_topic(topic_id)
 
 @topic_router.put("/update/{topic_id}", response_model=TopicResponse)
 async def update_topic_endpoint(topic_id: int, request: TopicUpdateRequest):
     """更新选题信息"""
-    return await update_topic(topic_id, request)
+    return  update_topic(topic_id, request)
 
 @topic_router.delete("/delete/{topic_id}")
 async def delete_topic_endpoint(topic_id: int):
     """删除选题"""
-    return await delete_topic(topic_id)
+    return  delete_topic(topic_id)
 
 @topic_router.get("/list", response_model=TopicListResponse)
 async def list_topics_endpoint(level: Optional[int] = None, parent_id: Optional[int] = None):
     """列出选题列表"""
-    return await list_topics(level=level, parent_id=parent_id)
+    return  list_topics(level=level, parent_id=parent_id)
 
 @topic_router.get("/hierarchy", response_model=TopicHierarchyResponse)
 async def get_topic_hierarchy_endpoint(parent_id: Optional[int] = None):
     """获取选题层级结构"""
-    return await get_topic_hierarchy(parent_id=parent_id)
+    return  get_topic_hierarchy(parent_id=parent_id)
 
 @topic_router.get("/style/list", response_model=StyleListResponse)
 async def get_style_list_endpoint():
     """获取所有风格列表"""
-    return await get_style_list()
+    return  get_style_list()
 
 @topic_router.get("/style/associated/{topic_id}", response_model=AssociatedStyleResponse)
 async def get_associated_styles_endpoint(topic_id: int):
     """获取某选题关联的风格列表"""
-    return await get_associated_styles(topic_id)
+    return  get_associated_styles(topic_id)

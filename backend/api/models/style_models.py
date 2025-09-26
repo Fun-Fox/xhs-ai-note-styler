@@ -25,8 +25,9 @@ class StyleAnalyzerResponse(BaseModel):
 
 class RewriteRequest(BaseModel):
     """内容重写请求模型"""
-    style_info: Dict[str, Any]  # 风格信息，包含style_name, feature_desc, word_count, example_content
+    style_id: int  # 风格ID，用于从数据库查询风格信息
     user_task: str  # 用户需求
+    word_count: Optional[str] = None  # 字数要求，可选
 
 
 class RewriteResponse(BaseModel):

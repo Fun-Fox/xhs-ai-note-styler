@@ -1,9 +1,13 @@
 import json
-import os.path
 
 import litellm
 from swarms.structs import AgentLoader
 from dotenv import load_dotenv
+import os
+
+# 添加项目根目录到Python路径
+
+from backend.utils import info, error
 
 load_dotenv()
 
@@ -102,6 +106,8 @@ def run_copycat_agent(style_info, user_task):
     # 运行Agent
     result = agent.run(full_task)
 
+    result = result.split("CopycatAgent: ")[1]
+
     return result
 
 
@@ -125,9 +131,8 @@ if __name__ == "__main__":
 """
 
     result = run_copycat_agent(example_style_info, example_user_task)
-    print("=== 生成的文案 ===")
-    result = result.split("CopycatAgent: ")[1]
-    print(result)
+    info("=== 生成的文案 ===")
+    info(result)
 
     import ast
 
@@ -140,13 +145,13 @@ if __name__ == "__main__":
         arguments_str = data[0]['function']['arguments']
         arguments_dict = json.loads(arguments_str)
 
-        print("\n=== 爆款文案 ===")
-        print(f"文案标题: {arguments_dict['title']}")
-        print(f"文案内容: {arguments_dict['content']}")
-        print(f"文案标签: {arguments_dict['tags']}")
+        info("\n=== 爆款文案 ===")
+        info(f"文案标题: {arguments_dict['title']}")
+        info(f"文案内容: {arguments_dict['content']}")
+        info(f"文案标签: {arguments_dict['tags']}")
 
     except Exception as e:
-        print(f"解析过程中出错: {e}")
+        error(f"解析过程中出错: {e}")
         import traceback
 
         traceback.print_exc()

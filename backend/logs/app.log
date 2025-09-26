@@ -1,0 +1,81 @@
+2025-09-26 15:15:06,575 - xhs_ai_note_styler - INFO - logger.py:78 - ÕıÔÚ³õÊ¼»¯Êı¾İ¿â...
+2025-09-26 15:15:06,594 - xhs_ai_note_styler - INFO - logger.py:78 - Êı¾İ¿â³õÊ¼»¯³É¹¦!
+2025-09-26 15:16:21,932 - xhs_ai_note_styler - INFO - logger.py:78 - ÕıÔÚ³õÊ¼»¯Êı¾İ¿â...
+2025-09-26 15:16:21,941 - xhs_ai_note_styler - INFO - logger.py:78 - Êı¾İ¿â³õÊ¼»¯³É¹¦!
+2025-09-26 15:21:08,940 - xhs_ai_note_styler - INFO - logger.py:78 - ÕıÔÚ³õÊ¼»¯Êı¾İ¿â...
+2025-09-26 15:21:08,950 - xhs_ai_note_styler - INFO - logger.py:78 - Êı¾İ¿â³õÊ¼»¯³É¹¦!
+2025-09-26 15:25:26,002 - xhs_ai_note_styler - INFO - logger.py:78 - ÕıÔÚ³õÊ¼»¯Êı¾İ¿â...
+2025-09-26 15:25:26,014 - xhs_ai_note_styler - INFO - logger.py:78 - Êı¾İ¿â³õÊ¼»¯³É¹¦!
+2025-09-26 15:37:21,270 - xhs_ai_note_styler - INFO - logger.py:78 - ÅĞ¶ÏÅäÖÃÎÄ¼şËùÔÚ : 
+2025-09-26 15:38:34,057 - xhs_ai_note_styler - INFO - logger.py:78 - ÅĞ¶ÏÅäÖÃÎÄ¼şËùÔÚÄ¿Â¼ : D:\PycharmProjects\xhs-ai-note-styler\backend
+2025-09-26 15:39:15,364 - xhs_ai_note_styler - INFO - logger.py:78 - ÅĞ¶ÏÅäÖÃÎÄ¼şËùÔÚÄ¿Â¼ : D:\PycharmProjects\xhs-ai-note-styler\backend
+2025-09-26 15:45:19,789 - xhs_ai_note_styler - INFO - logger.py:78 - ÅĞ¶ÏÅäÖÃÎÄ¼şËùÔÚÄ¿Â¼ : D:\PycharmProjects\xhs-ai-note-styler\backend
+2025-09-26 15:45:29,409 - xhs_ai_note_styler - INFO - logger.py:78 - ÕıÔÚ³õÊ¼»¯Êı¾İ¿â...
+2025-09-26 15:45:29,418 - xhs_ai_note_styler - INFO - logger.py:78 - Êı¾İ¿â³õÊ¼»¯³É¹¦!
+2025-09-26 15:45:51,542 - xhs_ai_note_styler - INFO - logger.py:78 - ¿ªÊ¼ÌáÈ¡URLÄÚÈİ: https://www.xiaohongshu.com/explore/68d119230000000011015a80?xsec_token=AB2pN1VBPTz7EaKXGfiAhQIJkmDpIbCnjEeouVMiP7k9c=&xsec_source=pc_feed
+2025-09-26 15:46:01,806 - xhs_ai_note_styler - INFO - logger.py:78 - ÌáÈ¡µ½µÄ±Ê¼ÇÊı¾İ: {'title': 'ÕÒ¸ö°àÉÏµÄµÚÒ»Ìì', 'content': '24ºÅÖ±²¥¼ä¼û[¿´R]#ËÙĞ´¶şÊ®ÖÜÄê[»°Ìâ]#\n#ÓÄÄ¬ÔÙË¼¿¼[»°Ìâ]#\n#ËÙĞ´CROQUIS[»°Ìâ]#\n#ËÙĞ´µÚ¶şÊ®»Ø[»°Ìâ]#\n#ËÙĞ´Âı¼Ò»ïÃÇ[»°Ìâ]#'}
+2025-09-26 15:46:01,806 - xhs_ai_note_styler - INFO - logger.py:78 - ³É¹¦ÌáÈ¡±Ê¼Ç: ÕÒ¸ö°àÉÏµÄµÚÒ»Ìì
+2025-09-26 15:46:01,885 - xhs_ai_note_styler - INFO - logger.py:78 - ³É¹¦ÌáÈ¡1Æª±Ê¼ÇÄÚÈİ
+2025-09-26 15:46:01,886 - xhs_ai_note_styler - ERROR - logger.py:96 - URL·ÖÎöÊ§°Ü: Markdown file D:\PycharmProjects\xhs-ai-note-styler\backend\style_analyzer.md not found.
+2025-09-26 15:46:48,870 - xhs_ai_note_styler - INFO - logger.py:78 - ÅĞ¶ÏÅäÖÃÎÄ¼şËùÔÚÄ¿Â¼ : D:\PycharmProjects\xhs-ai-note-styler\backend
+2025-09-26 15:46:49,937 - xhs_ai_note_styler - INFO - logger.py:78 - ÅĞ¶ÏÅäÖÃÎÄ¼şËùÔÚÄ¿Â¼ : D:\PycharmProjects\xhs-ai-note-styler\backend
+2025-09-26 15:46:54,782 - xhs_ai_note_styler - INFO - logger.py:78 - ÕıÔÚ³õÊ¼»¯Êı¾İ¿â...
+2025-09-26 15:46:54,799 - xhs_ai_note_styler - INFO - logger.py:78 - Êı¾İ¿â³õÊ¼»¯³É¹¦!
+2025-09-26 15:47:02,341 - xhs_ai_note_styler - INFO - logger.py:78 - ¿ªÊ¼ÌáÈ¡URLÄÚÈİ: https://www.xiaohongshu.com/explore/68d119230000000011015a80?xsec_token=AB2pN1VBPTz7EaKXGfiAhQIJkmDpIbCnjEeouVMiP7k9c=&xsec_source=pc_feed
+2025-09-26 15:47:10,256 - xhs_ai_note_styler - INFO - logger.py:78 - ÌáÈ¡µ½µÄ±Ê¼ÇÊı¾İ: {'title': 'ÕÒ¸ö°àÉÏµÄµÚÒ»Ìì', 'content': '24ºÅÖ±²¥¼ä¼û[¿´R]#ËÙĞ´¶şÊ®ÖÜÄê[»°Ìâ]#\n#ÓÄÄ¬ÔÙË¼¿¼[»°Ìâ]#\n#ËÙĞ´CROQUIS[»°Ìâ]#\n#ËÙĞ´µÚ¶şÊ®»Ø[»°Ìâ]#\n#ËÙĞ´Âı¼Ò»ïÃÇ[»°Ìâ]#'}
+2025-09-26 15:47:10,257 - xhs_ai_note_styler - INFO - logger.py:78 - ³É¹¦ÌáÈ¡±Ê¼Ç: ÕÒ¸ö°àÉÏµÄµÚÒ»Ìì
+2025-09-26 15:47:10,389 - xhs_ai_note_styler - INFO - logger.py:78 - ³É¹¦ÌáÈ¡1Æª±Ê¼ÇÄÚÈİ
+2025-09-26 15:47:10,389 - xhs_ai_note_styler - ERROR - logger.py:96 - URL·ÖÎöÊ§°Ü: Markdown file D:\PycharmProjects\xhs-ai-note-styler\backend\prompt\style_analyzer.md not found.
+2025-09-26 15:47:56,626 - xhs_ai_note_styler - INFO - logger.py:78 - ÅĞ¶ÏÅäÖÃÎÄ¼şËùÔÚÄ¿Â¼ : D:\PycharmProjects\xhs-ai-note-styler\backend
+2025-09-26 15:48:05,692 - xhs_ai_note_styler - INFO - logger.py:78 - ÕıÔÚ³õÊ¼»¯Êı¾İ¿â...
+2025-09-26 15:48:05,702 - xhs_ai_note_styler - INFO - logger.py:78 - Êı¾İ¿â³õÊ¼»¯³É¹¦!
+2025-09-26 15:48:07,678 - xhs_ai_note_styler - INFO - logger.py:78 - ¿ªÊ¼ÌáÈ¡URLÄÚÈİ: https://www.xiaohongshu.com/explore/68d119230000000011015a80?xsec_token=AB2pN1VBPTz7EaKXGfiAhQIJkmDpIbCnjEeouVMiP7k9c=&xsec_source=pc_feed
+2025-09-26 15:48:15,068 - xhs_ai_note_styler - INFO - logger.py:78 - ÌáÈ¡µ½µÄ±Ê¼ÇÊı¾İ: {'title': 'ÕÒ¸ö°àÉÏµÄµÚÒ»Ìì', 'content': '24ºÅÖ±²¥¼ä¼û[¿´R]#ËÙĞ´¶şÊ®ÖÜÄê[»°Ìâ]#\n#ÓÄÄ¬ÔÙË¼¿¼[»°Ìâ]#\n#ËÙĞ´CROQUIS[»°Ìâ]#\n#ËÙĞ´µÚ¶şÊ®»Ø[»°Ìâ]#\n#ËÙĞ´Âı¼Ò»ïÃÇ[»°Ìâ]#'}
+2025-09-26 15:48:15,069 - xhs_ai_note_styler - INFO - logger.py:78 - ³É¹¦ÌáÈ¡±Ê¼Ç: ÕÒ¸ö°àÉÏµÄµÚÒ»Ìì
+2025-09-26 15:48:15,120 - xhs_ai_note_styler - INFO - logger.py:78 - ³É¹¦ÌáÈ¡1Æª±Ê¼ÇÄÚÈİ
+2025-09-26 15:48:15,123 - xhs_ai_note_styler - INFO - logger.py:78 - ¿ªÊ¼·ÖÎöµÚ1Æª±Ê¼Ç: ÕÒ¸ö°àÉÏµÄµÚÒ»Ìì
+2025-09-26 15:51:24,616 - xhs_ai_note_styler - INFO - logger.py:78 - === Éú³ÉµÄÎÄ°¸ ===
+2025-09-26 15:51:24,630 - xhs_ai_note_styler - ERROR - logger.py:96 - ½âÎö¹ı³ÌÖĞ³ö´í: invalid character '£¬' (U+FF0C) (<unknown>, line 6)
+2025-09-26 15:51:26,782 - xhs_ai_note_styler - INFO - logger.py:78 - µÚ1Æª±Ê¼Ç·ÖÎöÍê³É: ÇáËÉ»¥¶¯ĞÍ
+2025-09-26 15:51:26,795 - xhs_ai_note_styler - INFO - logger.py:78 - ·ÖÎö½á¹ûÒÑ±£´æµ½Êı¾İ¿â£¬ID: 3
+2025-09-26 15:51:26,796 - xhs_ai_note_styler - INFO - logger.py:78 - URL·ÖÎöÍê³É£¬¹²·ÖÎö1Æª±Ê¼Ç£¬ºÄÊ±: 199.12Ãë
+2025-09-26 15:54:30,890 - xhs_ai_note_styler - INFO - logger.py:78 - ÅĞ¶ÏÅäÖÃÎÄ¼şËùÔÚÄ¿Â¼ : D:\PycharmProjects\xhs-ai-note-styler\backend
+2025-09-26 15:55:30,082 - xhs_ai_note_styler - INFO - logger.py:78 - === Éú³ÉµÄÎÄ°¸ ===
+2025-09-26 15:55:30,084 - xhs_ai_note_styler - INFO - logger.py:78 - 
+=== ±¬¿îÎÄ°¸ ===
+2025-09-26 15:55:30,084 - xhs_ai_note_styler - INFO - logger.py:78 - ÎÄ°¸±êÌâ: Áã»ù´¡Ò²ÄÜÑ§µÄÖĞÒ½¿Î£¡
+2025-09-26 15:55:30,084 - xhs_ai_note_styler - INFO - logger.py:78 - ÎÄ°¸±êÇ©: #ÖĞÒ½ÑøÉú #½¡¿µÉú»î #ÖĞÒ½¿Î³Ì #ÌåÖÊµ÷Àí
+2025-09-26 16:19:28,333 - xhs_ai_note_styler - INFO - logger.py:78 - ÅĞ¶ÏÅäÖÃÎÄ¼şËùÔÚÄ¿Â¼ : D:\PycharmProjects\xhs-ai-note-styler\backend
+2025-09-26 16:19:36,198 - xhs_ai_note_styler - INFO - logger.py:78 - ÕıÔÚ³õÊ¼»¯Êı¾İ¿â...
+2025-09-26 16:19:36,206 - xhs_ai_note_styler - INFO - logger.py:78 - Êı¾İ¿â³õÊ¼»¯³É¹¦!
+2025-09-26 16:23:19,877 - xhs_ai_note_styler - INFO - logger.py:78 - »ñÈ¡Ñ¡ÌâÁĞ±í
+2025-09-26 16:23:19,880 - xhs_ai_note_styler - INFO - logger.py:78 - ¹ØÁªĞ´×÷·ç¸ñ
+2025-09-26 16:24:19,645 - xhs_ai_note_styler - INFO - logger.py:78 - ÅĞ¶ÏÅäÖÃÎÄ¼şËùÔÚÄ¿Â¼ : D:\PycharmProjects\xhs-ai-note-styler\backend
+2025-09-26 16:24:20,975 - xhs_ai_note_styler - INFO - logger.py:78 - ÅĞ¶ÏÅäÖÃÎÄ¼şËùÔÚÄ¿Â¼ : D:\PycharmProjects\xhs-ai-note-styler\backend
+2025-09-26 16:24:29,806 - xhs_ai_note_styler - INFO - logger.py:78 - ÕıÔÚ³õÊ¼»¯Êı¾İ¿â...
+2025-09-26 16:24:29,816 - xhs_ai_note_styler - INFO - logger.py:78 - Êı¾İ¿â³õÊ¼»¯³É¹¦!
+2025-09-26 16:24:35,461 - xhs_ai_note_styler - INFO - logger.py:78 - ¿ªÊ¼ÌáÈ¡URLÄÚÈİ: https://www.xiaohongshu.com/explore/68d1f431000000001101ec44?xsec_token=AB2pN1VBPTz7EaKXGfiAhQIINlptOg7mcbuQcYnTR0Eq0=&xsec_source=pc_feed
+2025-09-26 16:24:44,568 - xhs_ai_note_styler - INFO - logger.py:78 - ³É¹¦ÌáÈ¡1Æª±Ê¼ÇÄÚÈİ
+2025-09-26 16:24:44,568 - xhs_ai_note_styler - ERROR - logger.py:96 - URL·ÖÎöÊ§°Ü: Markdown file D:\PycharmProjects\xhs-ai-note-styler\backend\style_analyzer.md not found.
+2025-09-26 16:25:29,486 - xhs_ai_note_styler - INFO - logger.py:78 - ÅĞ¶ÏÅäÖÃÎÄ¼şËùÔÚÄ¿Â¼ : D:\PycharmProjects\xhs-ai-note-styler\backend
+2025-09-26 16:25:40,149 - xhs_ai_note_styler - INFO - logger.py:78 - ÕıÔÚ³õÊ¼»¯Êı¾İ¿â...
+2025-09-26 16:25:40,158 - xhs_ai_note_styler - INFO - logger.py:78 - Êı¾İ¿â³õÊ¼»¯³É¹¦!
+2025-09-26 16:25:45,472 - xhs_ai_note_styler - INFO - logger.py:78 - ¿ªÊ¼ÌáÈ¡URLÄÚÈİ: https://www.xiaohongshu.com/explore/68d1f431000000001101ec44?xsec_token=AB2pN1VBPTz7EaKXGfiAhQIINlptOg7mcbuQcYnTR0Eq0=&xsec_source=pc_feed
+2025-09-26 16:25:54,386 - xhs_ai_note_styler - INFO - logger.py:78 - ³É¹¦ÌáÈ¡1Æª±Ê¼ÇÄÚÈİ
+2025-09-26 16:26:09,889 - xhs_ai_note_styler - INFO - logger.py:78 - µÚ1Æª±Ê¼Ç·ÖÎöÍê³É: Ã÷ĞÇÃñ×å·çÇé±êÇ©·ç
+2025-09-26 16:26:09,919 - xhs_ai_note_styler - INFO - logger.py:78 - ·ÖÎö½á¹ûÒÑ±£´æµ½Êı¾İ¿â£¬ID: 4
+2025-09-26 16:26:09,920 - xhs_ai_note_styler - INFO - logger.py:78 - URL·ÖÎöÍê³É£¬¹²·ÖÎö1Æª±Ê¼Ç£¬ºÄÊ±: 24.45Ãë
+2025-09-26 16:28:03,760 - xhs_ai_note_styler - INFO - logger.py:78 - ¹ØÁªĞ´×÷·ç¸ñ
+2025-09-26 16:28:03,763 - xhs_ai_note_styler - INFO - logger.py:78 - ¹ØÁªĞ´×÷·ç¸ñ
+2025-09-26 16:28:39,429 - xhs_ai_note_styler - INFO - logger.py:79 - åˆ¤æ–­é…ç½®æ–‡ä»¶æ‰€åœ¨ç›®å½• : D:\PycharmProjects\xhs-ai-note-styler\backend
+2025-09-26 16:28:52,480 - xhs_ai_note_styler - INFO - logger.py:79 - æ­£åœ¨åˆå§‹åŒ–æ•°æ®åº“...
+2025-09-26 16:28:52,488 - xhs_ai_note_styler - INFO - logger.py:79 - æ•°æ®åº“åˆå§‹åŒ–æˆåŠŸ!
+2025-09-26 16:29:16,696 - xhs_ai_note_styler - INFO - logger.py:79 - å¼€å§‹æå–URLå†…å®¹: https://www.xiaohongshu.com/explore/68d62730000000001201751f?xsec_token=ABcqskqMXrz__Gk4oKkiJ5tABhn_UJFOGT5PNGYlWztdc=&xsec_source=pc_feed
+2025-09-26 16:29:24,089 - xhs_ai_note_styler - INFO - logger.py:79 - æå–åˆ°çš„ç¬”è®°æ•°æ®: {'title': '9.26é•¿å®èŸèšä¸€å‘¨å¹´ï½œä¸€ä¸ŠåˆğŸ‰ä¸€å †ğŸæ¯›', 'content': '[æ‰“å¡R]åœ°ç‚¹ï¼šä¸Šæµ·èŸèšï¼ˆé•¿å®åŒºé‡‘é’Ÿè·¯788å·ï¼‰@ä¸Šæµ·èŸèš\nâ°æ—¶é—´ï¼š9.26-10.8\n[çº¢ä¹¦R]æ”»ç•¥ï¼š\nâœ…å‘[çº¢è–¯R]â•30[ç‚¹èµR]ğŸ‰ä¸€å‘¨å¹´å®šåˆ¶ç—›åŒ…â•å†°ç®±è´´â•é¼ æ ‡æ¿ï¼ŒL2ï¼ˆé è¿‘ç•ªèŒ„å£è¢‹ï¼‰å¤„âœ”ï¸æ¢ï¼ˆâš ï¸âš ï¸âš ï¸æ¯æ—¥é™é‡10ä»½ï¼Œå‘å®Œä¸ºæ­¢â—ï¸ï¼‰[å‘å³R]P2-3\nâœ…ğŸŠæ‰“å¡æ´»åŠ¨ï¼šæ”¶é›†è¾¾äººå¾½ç« ğŸ‰å‘¨è¾¹ğŸï¼Œæˆ‘å¯¹èŸèšæ¯”è¾ƒç†Ÿï¼ŒèŠ±äº†äºŒä¸‰ååˆ†é’Ÿï¼Œæ— æ¶ˆğŸ’°å³ğŸ‰12ä¸ªå¾½ç« ï¼ŒğŸ‰‘âœ”ï¸æ¢ä¿æ¸©æ¯oræœé‚¦åŒ…[å‘å³R]P3-5\nâœ…L1 å®œå®¶ğŸ‰ä¸€å‘¨å¹´åº†ä¸“å±ç—›åŒ…oré™å®šå®œå®¶è“å‘¨è¾¹ğŸï¼ŒDIYææ–™åŒ…ï¼Œæ‘‡æ‘‡ä¹â€¦ï¼ˆå‘¨è¾¹ğŸˆ¶è¾¾æ‹‰é©¬æŒ‚ä»¶ã€ç¼–ç»‡è¢‹ã€æ˜¾çœ¼åŒ…ã€å® ç‰©ç‰µå¼•ç»³â€¦ï¼Œé€‰å…¶ä¸€ï¼‰âš ï¸âš ï¸âš ï¸æ•°é‡æœ‰é™ï¼Œè®°å¾—åœ¨ğŸŠä¸Šå…ˆé¢„çº¦ï¼Œâœ”ï¸æ¢æ—¶å‡ºç¤ºé¢„çº¦ğŸâ•å°çº¢ä¹¦[æ¸…å•R] ï¼ŒäºŒè€…ç¼ºä¸€ä¸å¯â—ï¸[å‘å³R]P6-7\nâœ…L1 Shake Shackï¼ˆè¿‘3å·é—¨ï¼‰ï¼š9.26ä¸€å¤©4ï¸âƒ£åœºæ¬¡å‘è›‹ç³•â­•ï¸ï¼Œé¢†åˆ°åğŸ‘‰LG1 æ–‡æ±€è›‹ç³•ğŸ‰ğŸ°ï¼ˆé™é‡1000ä»½ï¼‰[å‘å³R]P8-9\nâœ…L1ä¸­åº­ è›™å¾—å‘å¿«é—ªï¼šé›†ç« 6ï¸âƒ£ä¸ªğŸ‰æŠ½ğŸï¼ˆåŸºæœ¬ä¸Šæ˜¯å››Då¥–ï¼Œçœ‹ä¼¼å§å”§ï¼Œå…¶å®èƒŒé¢æ˜¯ä¸ªå¼€ç“¶å™¨[å·ç¬‘R]ï¼‰[å‘å³R]P10-11\nâœ…LG1 æŸ æª¬å‘å³ï¼šå•†åœºğŸŠ1åˆ†âœ”ï¸æ¢ğŸ‰é¸­å±é¦™æŸ æª¬èŒ¶ä¸€æ¯\nâœ…LG1 è¶çƒ­é›†åˆï¼š1rğŸ‰æœˆé¥¼ï¼ˆé²œè‚‰orå°é¾™è™¾orçˆ†æ±é»„ç‰›ï¼‰è¿˜âœ”ï¸æ¢åˆ°äº†ä¹‹å‰50[ç‚¹èµR][æ¸…å•R]ğŸ‰50ræ— é—¨æ§›â­•ï¸\nâœ…å¤šå®¶é—¨åº—ğŸ’°ğŸ‰åˆ®åˆ®ä¹ï¼ˆL2é è¿‘ç•ªèŒ„å£è¢‹ï¼‰\nâ€¦\næ€»ä¹‹ï¼Œæœ€è¿‘èŸèšæ´»åŠ¨æŒºå¤š[å·ç¬‘R]å¤§å®¶å¿«å†²ï¼Œæ¬¢è¿è¡¥å……ï½\nä¸æ‡‚æ¥é—®ï¼Œå…ˆç²‰åé—®ï½[ä¸¤é¢—å¿ƒR][ä¸¤é¢—å¿ƒR][ä¸¤é¢—å¿ƒR]\n\t\n#ä¸Šæµ·è–…ç¾Šæ¯›[è¯é¢˜]# #é©¬è·¯ç”Ÿæ´»èŠ‚[è¯é¢˜]# #ä¸Šæµ·citywalk[è¯é¢˜]# #0å…ƒç©è½¬è¿™åº§åŸ[è¯é¢˜]# #ä¸Šæµ·å¿«é—ª[è¯é¢˜]# #ä¸€ä»£äººæœ‰ä¸€ä»£äººçš„é¸¡è›‹è¦é¢†[è¯é¢˜]# #ç¾å¥½ç”Ÿæ´»åœ¨èŸèš[è¯é¢˜]# #å¿«ä¹æ— æ³•ä¸€é”®ä¸‹å•[è¯é¢˜]# #ä¸Šæµ·èŸèš[è¯é¢˜]# #èŸèš1å‘¨å¹´å®œèµ·å—¨[è¯é¢˜]#'}
+2025-09-26 16:29:24,089 - xhs_ai_note_styler - INFO - logger.py:79 - æˆåŠŸæå–ç¬”è®°: 9.26é•¿å®èŸèšä¸€å‘¨å¹´ï½œä¸€ä¸ŠåˆğŸ‰ä¸€å †ğŸæ¯›
+2025-09-26 16:29:24,134 - xhs_ai_note_styler - INFO - logger.py:79 - æˆåŠŸæå–1ç¯‡ç¬”è®°å†…å®¹
+2025-09-26 16:29:24,136 - xhs_ai_note_styler - INFO - logger.py:79 - å¼€å§‹åˆ†æç¬¬1ç¯‡ç¬”è®°: 9.26é•¿å®èŸèšä¸€å‘¨å¹´ï½œä¸€ä¸ŠåˆğŸ‰ä¸€å †ğŸæ¯›
+2025-09-26 16:29:26,299 - xhs_ai_note_styler - INFO - logger.py:79 - ç¬¬1ç¯‡ç¬”è®°åˆ†æå®Œæˆ: å®ç”¨å‘äº’åŠ¨æ”»ç•¥é£
+2025-09-26 16:29:26,370 - xhs_ai_note_styler - INFO - logger.py:79 - åˆ†æç»“æœå·²ä¿å­˜åˆ°æ•°æ®åº“ï¼ŒID: 5
+2025-09-26 16:29:26,370 - xhs_ai_note_styler - INFO - logger.py:79 - URLåˆ†æå®Œæˆï¼Œå…±åˆ†æ1ç¯‡ç¬”è®°ï¼Œè€—æ—¶: 9.67ç§’
+2025-09-26 16:39:17,121 - xhs_ai_note_styler - INFO - logger.py:79 - åˆ¤æ–­é…ç½®æ–‡ä»¶æ‰€åœ¨ç›®å½• : D:\PycharmProjects\xhs-ai-note-styler\backend

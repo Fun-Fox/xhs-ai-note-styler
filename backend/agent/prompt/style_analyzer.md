@@ -1,7 +1,7 @@
 ---
 name: StyleAnalyzer
 description: 小红书爆款内容写作风格分析专家
-model_name: groq/openai/gpt-oss-120b
+model_name: groq/qwen/qwen3-32b
 temperature: 0.6
 max_completion_tokens: 4096,
 top_p: 0.95,

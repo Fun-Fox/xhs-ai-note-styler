@@ -1,0 +1,29 @@
+.text-black {
+  color: #000000;
+}
+
+/* 添加或修改其他文本类 */
+.text-gray {
+  color: #6B7280; /* 更改灰色文本为更深的颜色 */
+}
+
+.text-primary {
+  color: #3b82f6; /* 主要颜色，可以根据需求调整 */
+}
+
+.text-secondary {
+  color: #4b5563; /* 次要颜色，可以根据需求调整 */
+}
+
+/* 应用到具体组件中 */
+.container .text-gray-700 {
+  color: #374151; /* 更深的灰色 */
+}
+
+.container .text-gray-500 {
+  color: #6B7280; /* 更深的灰色 */
+}
+
+.container .text-gray-600 {
+  color: #4B5563; /* 更深的灰色 */
+}

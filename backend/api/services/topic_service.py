@@ -3,7 +3,6 @@
 处理选题增删改查、层级关系和风格关联等业务逻辑
 """
 
-import logging
 from typing import Dict, Any, List, Optional
 from datetime import datetime
 
@@ -22,7 +21,8 @@ from ..models.topic_models import (
     AssociatedStyleResponse
 )
 
-logger = logging.getLogger(__name__)
+# 配置日志
+from backend.utils.logger import info as logger_info, error as logger_error, warning as logger_warning
 
 def create_topic(request: TopicCreateRequest) -> TopicResponse:
     """
@@ -35,6 +35,8 @@ def create_topic(request: TopicCreateRequest) -> TopicResponse:
         TopicResponse: 创建后的选题响应
     """
     try:
+        logger_info("创建新选题")
+        
         # 验证父级选题是否存在（如果是二级或三级选题）
         if request.parent_id and request.parent_id != 0:
             parent_topic = topic_service.get_topic(request.parent_id)
@@ -61,7 +63,7 @@ def create_topic(request: TopicCreateRequest) -> TopicResponse:
         )
         
     except Exception as e:
-        logger.error(f"创建选题失败: {str(e)}")
+        logger_error(f"创建选题时出错: {str(e)}")
         raise Exception(f"创建选题失败: {str(e)}")
 
 def get_topic(topic_id: int) -> TopicResponse:
@@ -75,6 +77,8 @@ def get_topic(topic_id: int) -> TopicResponse:
         TopicResponse: 选题响应
     """
     try:
+        logger_info("获取选题详情")
+        
         topic = topic_service.get_topic(topic_id)
         if not topic:
             raise Exception(f"选题ID {topic_id} 不存在")
@@ -86,7 +90,7 @@ def get_topic(topic_id: int) -> TopicResponse:
         )
         
     except Exception as e:
-        logger.error(f"获取选题失败: {str(e)}")
+        logger_error(f"获取选题详情时出错: {str(e)}")
         raise Exception(f"获取选题失败: {str(e)}")
 
 def update_topic(topic_id: int, request: TopicUpdateRequest) -> TopicResponse:
@@ -101,6 +105,8 @@ def update_topic(topic_id: int, request: TopicUpdateRequest) -> TopicResponse:
         TopicResponse: 更新后的选题响应
     """
     try:
+        logger_info("更新选题信息")
+        
         # 检查选题是否存在
         topic = topic_service.get_topic(topic_id)
         if not topic:
@@ -146,7 +152,7 @@ def update_topic(topic_id: int, request: TopicUpdateRequest) -> TopicResponse:
         )
         
     except Exception as e:
-        logger.error(f"更新选题失败: {str(e)}")
+        logger_error(f"更新选题时出错: {str(e)}")
         raise Exception(f"更新选题失败: {str(e)}")
 
 def delete_topic(topic_id: int) -> Dict[str, Any]:
@@ -160,6 +166,8 @@ def delete_topic(topic_id: int) -> Dict[str, Any]:
         Dict[str, Any]: 删除结果
     """
     try:
+        logger_info("删除选题")
+        
         # 检查选题是否存在
         topic = topic_service.get_topic(topic_id)
         if not topic:
@@ -179,7 +187,7 @@ def delete_topic(topic_id: int) -> Dict[str, Any]:
         }
         
     except Exception as e:
-        logger.error(f"删除选题失败: {str(e)}")
+        logger_error(f"删除选题时出错: {str(e)}")
         raise Exception(f"删除选题失败: {str(e)}")
 
 def list_topics(level: Optional[int] = None, parent_id: Optional[int] = None) -> TopicListResponse:
@@ -194,6 +202,8 @@ def list_topics(level: Optional[int] = None, parent_id: Optional[int] = None) ->
         TopicListResponse: 选题列表响应
     """
     try:
+        logger_info("获取选题列表")
+        
         topics = topic_service.list_topics(level=level, parent_id=parent_id)
         topic_list = [topic.to_dict() for topic in topics]
         
@@ -204,7 +214,7 @@ def list_topics(level: Optional[int] = None, parent_id: Optional[int] = None) ->
         )
         
     except Exception as e:
-        logger.error(f"获取选题列表失败: {str(e)}")
+        logger_error(f"获取选题列表时出错: {str(e)}")
         raise Exception(f"获取选题列表失败: {str(e)}")
 
 def get_topic_hierarchy(parent_id: Optional[int] = None) -> TopicHierarchyResponse:
@@ -218,6 +228,8 @@ def get_topic_hierarchy(parent_id: Optional[int] = None) -> TopicHierarchyRespon
         TopicHierarchyResponse: 选题层级结构响应
     """
     try:
+        logger_info("获取选题层级结构")
+        
         hierarchy = topic_service.get_topic_hierarchy(parent_id=parent_id)
         
         return TopicHierarchyResponse(
@@ -227,7 +239,7 @@ def get_topic_hierarchy(parent_id: Optional[int] = None) -> TopicHierarchyRespon
         )
         
     except Exception as e:
-        logger.error(f"获取选题层级结构失败: {str(e)}")
+        logger_error(f"获取选题层级结构时出错: {str(e)}")
         raise Exception(f"获取选题层级结构失败: {str(e)}")
 
 def get_style_list() -> StyleListResponse:
@@ -238,6 +250,8 @@ def get_style_list() -> StyleListResponse:
         StyleListResponse: 风格列表响应
     """
     try:
+        logger_info("关联写作风格")
+        
         styles = style_analysis_service.get_all_style_analyses()
         style_list = [style.to_dict() for style in styles]
         
@@ -248,7 +262,7 @@ def get_style_list() -> StyleListResponse:
         )
         
     except Exception as e:
-        logger.error(f"获取风格列表失败: {str(e)}")
+        logger_error(f"关联写作风格时出错: {str(e)}")
         raise Exception(f"获取风格列表失败: {str(e)}")
 
 def get_associated_styles(topic_id: int) -> AssociatedStyleResponse:
@@ -262,6 +276,8 @@ def get_associated_styles(topic_id: int) -> AssociatedStyleResponse:
         AssociatedStyleResponse: 关联风格列表响应
     """
     try:
+        logger_info("获取关联的写作风格")
+        
         topic = topic_service.get_topic(topic_id)
         if not topic:
             raise Exception(f"选题ID {topic_id} 不存在")
@@ -276,5 +292,5 @@ def get_associated_styles(topic_id: int) -> AssociatedStyleResponse:
         )
         
     except Exception as e:
-        logger.error(f"获取关联风格列表失败: {str(e)}")
+        logger_error(f"获取关联写作风格时出错: {str(e)}")
         raise Exception(f"获取关联风格列表失败: {str(e)}")
