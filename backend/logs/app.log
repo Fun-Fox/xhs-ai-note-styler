@@ -89,3 +89,339 @@
 2025-09-26 16:43:44,353 - xhs_ai_note_styler - INFO - logger.py:79 - 成功提取笔记: 9.26长宁荟聚一周年｜一上午🉐一堆🐏毛
 2025-09-26 16:43:44,453 - xhs_ai_note_styler - INFO - logger.py:79 - 成功提取1篇笔记内容
 2025-09-26 16:43:44,463 - xhs_ai_note_styler - INFO - logger.py:79 - 开始分析第1篇笔记: 9.26长宁荟聚一周年｜一上午🉐一堆🐏毛
+2025-09-26 16:47:51,845 - xhs_ai_note_styler - INFO - logger.py:79 - 第1篇笔记分析完成: 信息密集型攻略体
+2025-09-26 16:47:51,873 - xhs_ai_note_styler - INFO - logger.py:79 - 分析结果已保存到数据库，ID: 6
+2025-09-26 16:47:51,875 - xhs_ai_note_styler - INFO - logger.py:79 - URL分析完成，共分析1篇笔记，耗时: 254.54秒
+2025-09-26 16:47:51,878 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 16:47:51,888 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 16:47:51,893 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 16:47:51,898 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 16:47:51,901 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 16:47:51,905 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 16:48:15,483 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 16:48:15,491 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 16:48:22,218 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 16:48:22,222 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:00:31,106 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:00:32,386 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:03:14,917 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:04:03,401 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:04:04,781 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:04:04,785 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:04:04,788 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:04:04,791 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:04:06,488 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:04:06,499 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:04:07,234 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:04:07,239 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:04:07,907 - xhs_ai_note_styler - INFO - logger.py:79 - 获取关联的写作风格
+2025-09-26 17:04:11,694 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:04:11,700 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:04:11,703 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:04:11,705 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:04:12,693 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:04:12,699 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:04:15,910 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:04:15,910 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:04:15,915 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:04:15,915 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:04:16,815 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:04:16,823 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:04:17,579 - xhs_ai_note_styler - INFO - logger.py:79 - 获取关联的写作风格
+2025-09-26 17:04:20,118 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:04:20,126 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:04:20,133 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:04:20,133 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:04:22,137 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:04:22,145 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:04:38,739 - xhs_ai_note_styler - INFO - logger.py:79 - 获取关联的写作风格
+2025-09-26 17:04:45,434 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:08:19,254 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:09:15,556 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:11:09,411 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:11:18,076 - xhs_ai_note_styler - INFO - logger.py:79 - 获取关联的写作风格
+2025-09-26 17:11:19,851 - xhs_ai_note_styler - INFO - logger.py:79 - 获取关联的写作风格
+2025-09-26 17:11:20,164 - xhs_ai_note_styler - INFO - logger.py:79 - 获取关联的写作风格
+2025-09-26 17:11:38,567 - xhs_ai_note_styler - INFO - logger.py:79 - 获取关联的写作风格
+2025-09-26 17:11:46,709 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:12:06,433 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:12:06,443 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:12:06,450 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:12:06,450 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:12:19,903 - xhs_ai_note_styler - INFO - logger.py:79 - 更新选题信息
+2025-09-26 17:12:19,950 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:12:21,660 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:12:21,669 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:12:25,755 - xhs_ai_note_styler - INFO - logger.py:79 - 获取关联的写作风格
+2025-09-26 17:12:26,829 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:12:26,832 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:12:26,834 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:12:26,834 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:12:32,443 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:12:32,452 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:12:34,217 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:12:34,226 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:12:34,230 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:12:34,232 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:12:35,782 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:12:35,794 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:12:37,292 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:12:37,298 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:12:37,299 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:12:37,306 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:12:45,589 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:12:45,599 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:12:46,418 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:12:46,420 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:12:46,429 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:12:46,431 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:12:47,525 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:12:47,532 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:13:57,833 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:13:57,835 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:13:57,837 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:13:57,838 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:13:58,305 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:13:58,310 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:14:00,188 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:14:00,192 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:14:00,195 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:14:00,198 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:14:02,237 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:14:02,238 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:14:03,537 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:14:03,540 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:14:03,541 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:14:03,550 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:14:05,566 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:14:05,569 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:14:05,575 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:14:05,577 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:14:14,491 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:14:14,502 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:14:15,357 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:14:15,359 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:14:15,359 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:14:15,367 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:14:28,323 - xhs_ai_note_styler - INFO - logger.py:79 - 更新选题信息
+2025-09-26 17:14:28,352 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:14:29,700 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:14:29,713 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:16:02,645 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:16:02,648 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:16:02,652 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:16:02,654 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:16:15,549 - xhs_ai_note_styler - INFO - logger.py:79 - 创建新选题
+2025-09-26 17:16:15,566 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:16:20,057 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:16:20,067 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:16:45,345 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:16:45,350 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:16:45,353 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:16:45,356 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:16:51,788 - xhs_ai_note_styler - INFO - logger.py:79 - 创建新选题
+2025-09-26 17:16:51,816 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:16:53,199 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:16:53,208 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:17:36,489 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:17:36,494 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:17:36,499 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:17:36,502 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:17:37,819 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:17:37,822 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:17:40,409 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:17:40,412 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:17:41,657 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:17:41,659 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:17:41,663 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:17:41,665 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:17:43,774 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:17:43,784 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:17:44,366 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:17:44,367 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:17:44,372 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:17:44,378 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:18:35,999 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:18:36,003 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:18:36,911 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:18:36,920 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:18:38,486 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:18:53,338 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:18:54,634 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:19:28,833 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:19:32,331 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:19:38,116 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:20:43,676 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:20:46,122 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:20:46,899 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:24:12,074 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:24:14,235 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:24:19,547 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:24:51,744 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:24:52,602 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:24:54,379 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:25:33,362 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:25:34,499 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:27:25,835 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:27:28,539 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:28:36,442 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:28:36,444 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:28:36,447 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:28:36,449 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:28:38,002 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:28:38,004 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:28:41,658 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:28:41,661 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:28:44,973 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:28:44,978 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:28:48,852 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:28:48,855 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:28:48,858 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:28:48,862 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:28:53,654 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:28:53,658 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:28:57,541 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:28:57,544 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:28:59,675 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:28:59,678 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:29:06,339 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:29:06,343 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:29:08,498 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:29:08,501 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:29:08,507 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:29:08,510 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:29:08,975 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:29:08,987 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:29:10,190 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:29:10,192 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:29:10,196 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:29:10,199 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:29:19,692 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:29:19,698 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:29:21,477 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:29:21,480 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:29:46,514 - xhs_ai_note_styler - INFO - logger.py:79 - 开始提取URL内容: https://www.xiaohongshu.com/explore/68d44148000000001300aca5?xsec_token=ABMVaiGOO6pRBUBYNe9fx3KWMNO1FG2yJ9YFht_kWTFVA=&xsec_source=pc_feed
+2025-09-26 17:29:53,811 - xhs_ai_note_styler - INFO - logger.py:79 - 提取到的笔记数据: {'title': '请全体打工人向鸡排主理人学习', 'content': '#职场干货[话题]# #景德镇鸡排哥[话题]# #鸡排哥[话题]# #鸡排哥忙死了忙死了[话题]#  #职场语言艺术[话题]##职场实用主义[话题]# #职场干货[话题]# #好好接话[话题]# #向上管理[话题]# #职场生存法则[话题]#'}
+2025-09-26 17:29:53,812 - xhs_ai_note_styler - INFO - logger.py:79 - 成功提取笔记: 请全体打工人向鸡排主理人学习
+2025-09-26 17:29:53,940 - xhs_ai_note_styler - INFO - logger.py:79 - 成功提取1篇笔记内容
+2025-09-26 17:29:53,944 - xhs_ai_note_styler - INFO - logger.py:79 - 开始分析第1篇笔记: 请全体打工人向鸡排主理人学习
+2025-09-26 17:29:56,257 - xhs_ai_note_styler - INFO - logger.py:79 - 第1篇笔记分析完成: 号召型标题+标签引流
+2025-09-26 17:29:56,280 - xhs_ai_note_styler - INFO - logger.py:79 - 分析结果已保存到数据库，ID: 7
+2025-09-26 17:29:56,280 - xhs_ai_note_styler - INFO - logger.py:79 - URL分析完成，共分析1篇笔记，耗时: 9.77秒
+2025-09-26 17:30:54,980 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:30:55,002 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:31:25,283 - xhs_ai_note_styler - INFO - logger.py:79 - 开始重写内容
+2025-09-26 17:31:27,757 - xhs_ai_note_styler - INFO - logger.py:79 - 内容重写完成，耗时: 2.47秒
+2025-09-26 17:31:27,904 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:31:27,914 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:31:27,925 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:31:27,930 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:31:29,337 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:31:29,340 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:31:29,343 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:31:29,346 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:31:33,141 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:31:33,143 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:31:33,150 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:31:33,156 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:31:33,824 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:31:33,835 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:31:35,084 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:31:35,087 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:31:36,801 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:31:36,807 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:31:36,815 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:31:36,823 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:31:38,219 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:31:38,227 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:31:40,467 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:31:40,493 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:31:41,189 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:31:41,192 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:31:41,195 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:31:41,199 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:31:42,056 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:31:42,061 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:31:45,432 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:31:45,466 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:31:48,266 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:31:49,625 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题层级结构
+2025-09-26 17:31:54,637 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:31:54,648 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:32:08,972 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:32:08,975 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:32:10,730 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:32:10,737 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:32:12,383 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:32:12,393 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:33:02,972 - xhs_ai_note_styler - INFO - logger.py:79 - 开始重写内容
+2025-09-26 17:33:08,413 - xhs_ai_note_styler - INFO - logger.py:79 - 内容重写完成，耗时: 5.44秒
+2025-09-26 17:35:23,954 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:35:26,113 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:35:26,117 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:35:26,119 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:35:26,122 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:35:27,439 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:35:27,444 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:35:28,923 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:35:28,928 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:35:28,935 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:35:28,945 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:35:29,994 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:35:29,998 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:35:30,805 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:35:30,806 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:35:30,809 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:35:30,809 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:35:31,833 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:35:31,835 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:36:54,518 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:36:54,532 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:36:56,070 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:36:56,077 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:36:56,080 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:36:56,083 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:36:57,505 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:36:57,514 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:37:08,729 - xhs_ai_note_styler - INFO - logger.py:79 - 开始重写内容
+2025-09-26 17:37:11,185 - xhs_ai_note_styler - INFO - logger.py:79 - 内容重写完成，耗时: 2.46秒
+2025-09-26 17:37:50,971 - xhs_ai_note_styler - INFO - logger.py:79 - 开始重写内容
+2025-09-26 17:37:53,936 - xhs_ai_note_styler - INFO - logger.py:79 - 内容重写完成，耗时: 2.97秒
+2025-09-26 17:38:32,138 - xhs_ai_note_styler - INFO - logger.py:79 - 开始提取URL内容: https://www.xiaohongshu.com/explore/68ce2baa000000001301ac54?xsec_token=AByg_j3sCDpXXdJCh7vPY0CdbYRIA0OR2Ib9b4j3c-uIE=&xsec_source=pc_feed
+2025-09-26 17:38:39,420 - xhs_ai_note_styler - INFO - logger.py:79 - 提取到的笔记数据: {'title': '嘎子哥拍这段应该NG了很多遍吧', 'content': '#搞笑[话题]# #嘎子[话题]# #谢孟伟[话题]# #名场面[话题]# #灵魂画手[话题]# #手绘[话题]#'}
+2025-09-26 17:38:39,421 - xhs_ai_note_styler - INFO - logger.py:79 - 成功提取笔记: 嘎子哥拍这段应该NG了很多遍吧
+2025-09-26 17:38:39,546 - xhs_ai_note_styler - INFO - logger.py:79 - 成功提取1篇笔记内容
+2025-09-26 17:38:39,549 - xhs_ai_note_styler - INFO - logger.py:79 - 开始分析第1篇笔记: 嘎子哥拍这段应该NG了很多遍吧
+2025-09-26 17:38:41,457 - xhs_ai_note_styler - INFO - logger.py:79 - 第1篇笔记分析完成: 轻松调侃式
+2025-09-26 17:38:41,497 - xhs_ai_note_styler - INFO - logger.py:79 - 分析结果已保存到数据库，ID: 8
+2025-09-26 17:38:41,498 - xhs_ai_note_styler - INFO - logger.py:79 - URL分析完成，共分析1篇笔记，耗时: 9.36秒
+2025-09-26 17:39:01,744 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:39:01,753 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:39:41,122 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:39:41,138 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:39:41,147 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:39:41,160 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:39:42,402 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:39:42,405 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:39:49,203 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:39:49,210 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:39:49,218 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:39:49,223 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:39:57,612 - xhs_ai_note_styler - INFO - logger.py:79 - 删除选题
+2025-09-26 17:39:57,619 - xhs_ai_note_styler - ERROR - logger.py:97 - 删除选题时出错: 该选题有 2 个子选题，不能删除
+2025-09-26 17:39:59,467 - xhs_ai_note_styler - INFO - logger.py:79 - 删除选题
+2025-09-26 17:39:59,474 - xhs_ai_note_styler - ERROR - logger.py:97 - 删除选题时出错: 该选题有 2 个子选题，不能删除
+2025-09-26 17:40:08,743 - xhs_ai_note_styler - INFO - logger.py:79 - 创建新选题
+2025-09-26 17:40:08,783 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:40:30,674 - xhs_ai_note_styler - INFO - logger.py:79 - 创建新选题
+2025-09-26 17:40:30,696 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:40:42,593 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:40:42,602 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:41:32,388 - xhs_ai_note_styler - INFO - logger.py:79 - 开始重写内容
+2025-09-26 17:41:36,117 - xhs_ai_note_styler - INFO - logger.py:79 - 内容重写完成，耗时: 3.73秒
+2025-09-26 17:42:10,533 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:42:10,536 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:42:10,951 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:42:10,953 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
+2025-09-26 17:42:10,956 - xhs_ai_note_styler - INFO - logger.py:79 - 获取选题列表
+2025-09-26 17:42:10,960 - xhs_ai_note_styler - INFO - logger.py:79 - 关联写作风格
