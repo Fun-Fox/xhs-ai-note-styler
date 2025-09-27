@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { styleApi, rewriteApi } from '../api';
 
 interface Style {
@@ -8,44 +8,56 @@ interface Style {
   style_name: string;
   feature_desc: string;
   category: string;
+  sample_title: string;
+  sample_content: string;
+  created_at: string;
 }
 
-interface RewriteResult {
-  title: string;
-  content: string;
-  tags: string;
-}
-
-export default function ContentRewritePage() {
-  const [styles, setStyles] = useState<Style[]>([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-  const [success, setSuccess] = useState<string | null>(null);
-  const [rewriteResult, setRewriteResult] = useState<RewriteResult | null>(null);
-  
-  // 表单状态
+export default function RewritePage() {
+  // 表单数据状态
   const [formData, setFormData] = useState({
     style_id: 0,
     user_task: '',
     word_count: '',
   });
+  
+  // 页面状态
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [success, setSuccess] = useState<string | null>(null);
+  
+  // 风格数据
+  const [styles, setStyles] = useState<Style[]>([]);
+  const [selectedStyle, setSelectedStyle] = useState<Style | null>(null);
+  
+  // 搜索功能状态
+  const [searchQuery, setSearchQuery] = useState('');
+  
+  // 重写结果
+  const [rewriteResult, setRewriteResult] = useState<{
+    title: string;
+    content: string;
+    tags: string;
+  } | null>(null);
 
   // 获取风格列表
   const fetchStyles = async () => {
     try {
+      setLoading(true);
+      setError(null);
+      
       const data = await styleApi.list();
+      
       if (data.success) {
         setStyles(data.data);
-        // 默认选择第一个风格
-        if (data.data.length > 0) {
-          setFormData(prev => ({
-            ...prev,
-            style_id: data.data[0].id,
-          }));
-        }
+      } else {
+        setError(data.message || '获取风格列表失败');
       }
     } catch (err) {
-      console.error('获取风格列表时发生错误:', err);
+      setError('获取风格列表时发生错误');
+      console.error(err);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -54,36 +66,57 @@ export default function ContentRewritePage() {
     fetchStyles();
   }, []);
 
-  // 处理表单变化
-  const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement | HTMLSelectElement>) => {
+  // 处理表单输入变化
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
+    
+    setFormData({
+      ...formData,
       [name]: name === 'style_id' ? parseInt(value) : value,
-    }));
+    });
+    
+    // 当风格选择变化时，更新选中的风格详情
+    if (name === 'style_id') {
+      const style = styles.find(s => s.id === parseInt(value));
+      setSelectedStyle(style || null);
+    }
   };
 
-  // 提交表单
+  // 处理表单提交
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formData.user_task.trim()) {
-      setError('请填写具体需求');
-      return;
-    }
-
-    if (!formData.style_id) {
+    
+    if (formData.style_id === 0) {
       setError('请选择一个风格');
       return;
     }
-
+    
+    if (!formData.user_task.trim()) {
+      setError('请输入具体需求');
+      return;
+    }
+    
     try {
       setLoading(true);
       setError(null);
       setSuccess(null);
-      setRewriteResult(null);
-
-      const result = await rewriteApi.rewrite(formData);
-
+      
+      const requestData = {
+        style_id: formData.style_id,
+        user_task: formData.user_task,
+        word_count: formData.word_count || undefined,
+      };
+      
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:8000'}/api/v1/rewrite/style/rewrite`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(requestData),
+      });
+      
+      const result = await response.json();
+      
       if (result.success) {
         setSuccess('内容生成成功');
         setRewriteResult({
@@ -101,6 +134,17 @@ export default function ContentRewritePage() {
       setLoading(false);
     }
   };
+
+  // 根据搜索查询过滤风格列表
+  const filteredStyles = useMemo(() => {
+    if (!searchQuery) return styles;
+    
+    return styles.filter(style => 
+      style.style_name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      style.category.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      style.feature_desc.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+  }, [styles, searchQuery]);
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -127,20 +171,60 @@ export default function ContentRewritePage() {
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 选择风格 *
               </label>
+              
+              {/* 搜索输入框 */}
+              <div className="mb-2">
+                <input
+                  type="text"
+                  placeholder="搜索风格名称、分类或特征..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
+                />
+              </div>
+              
+              {/* 带搜索功能的下拉选择框 */}
               <select
                 name="style_id"
                 value={formData.style_id}
                 onChange={handleInputChange}
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
               >
-                {styles.map(style => (
+                <option value={0}>请选择风格</option>
+                {filteredStyles.map(style => (
                   <option key={style.id} value={style.id}>
-                    {style.style_name} - {style.feature_desc}
+                    {style.style_name} - {style.category}
                   </option>
                 ))}
               </select>
+              
               {styles.length === 0 && (
                 <p className="mt-1 text-sm text-gray-500">暂无可用风格，请先进行风格分析</p>
+              )}
+              
+              {selectedStyle && (
+                <div className="mt-4 p-4 border border-gray-200 rounded-md bg-gray-50">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                      <h4 className="text-sm font-medium text-gray-700 mb-1">风格特点</h4>
+                      <p className="text-sm text-gray-600">{selectedStyle.feature_desc}</p>
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-medium text-gray-700 mb-1">推荐分类</h4>
+                      <p className="text-sm text-gray-600">{selectedStyle.category}</p>
+                    </div>
+                  </div>
+                  
+                  <div className="mt-3">
+                    <h4 className="text-sm font-medium text-gray-700 mb-1">标题示例</h4>
+                    <p className="text-sm text-gray-600 bg-white p-2 rounded border">{selectedStyle.sample_title}</p>
+                  </div>
+                  
+                  <div className="mt-3">
+                    <h4 className="text-sm font-medium text-gray-700 mb-1">内容示例</h4>
+                    <p className="text-sm text-gray-600 bg-white p-2 rounded border whitespace-pre-wrap">{selectedStyle.sample_content}</p>
+                  </div>
+                </div>
               )}
             </div>
             

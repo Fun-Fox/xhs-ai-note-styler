@@ -112,15 +112,17 @@ async def extract_note_content(note_urls: str):
                     # 尝试从页面元素中提取标题
                     title_element = await page.query_selector('h1.title')
                     title = await title_element.inner_text() if title_element else ''
-                    
+
                     # 尝试从页面元素中提取内容
                     content_element = await page.query_selector('div.desc')
                     content = await content_element.inner_text() if content_element else ''
-                    
+
                     if title or content:
+                        import re
+                        cleaned_content = re.sub(r'\[话题]', '', content)
                         note_data = {
                             'title': title,
-                            'content': content
+                            'content': cleaned_content
                         }
 
                 if note_data and (note_data.get('title') or note_data.get('content')):

@@ -17,3 +17,8 @@ URL分析失败: 'dict' object has no attribute 'title'
 URL分析失败: Markdown file D:\PycharmProjects\xhs-ai-note-styler\backend\style_analyzer.md not found.
 URL分析失败: Markdown file D:\PycharmProjects\xhs-ai-note-styler\backend\prompt\style_analyzer.md not found.
 URL分析失败: Markdown file D:\PycharmProjects\xhs-ai-note-styler\backend\style_analyzer.md not found.
+删除选题时出错: 该选题有 2 个子选题，不能删除
+删除选题时出错: 该选题有 2 个子选题，不能删除
+获取选题列表时出错: Parent instance <Topic at 0x18ec3dfde20> is not bound to a Session; lazy load operation of attribute 'parent' cannot proceed (Background on this error at: https://sqlalche.me/e/20/bhk3)
+创建选题时出错: Parent instance <Topic at 0x1c17efd3ec0> is not bound to a Session; lazy load operation of attribute 'parent' cannot proceed (Background on this error at: https://sqlalche.me/e/20/bhk3)
+删除选题时出错: 该选题有 1 个子选题，不能删除

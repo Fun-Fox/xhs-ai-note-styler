@@ -5,7 +5,7 @@ API路由定义文件
 from typing import Optional
 
 from fastapi import APIRouter
-from .services.style_service import analyze_style, rewrite_content, analyze_url_styles
+from .services.style_service import analyze_style, rewrite_content, analyze_url_styles, get_rewrite_records
 from .services.topic_service import (
     create_topic, 
     get_topic, 
@@ -14,7 +14,8 @@ from .services.topic_service import (
     list_topics, 
     get_topic_hierarchy,
     get_style_list,
-    get_associated_styles
+    get_associated_styles,
+    associate_style
 )
 from .models.style_models import (
     StyleAnalyzerRequest, 
@@ -22,7 +23,9 @@ from .models.style_models import (
     RewriteRequest, 
     RewriteResponse,
     UrlAnalyzerRequest,
-    UrlAnalyzerResponse
+    UrlAnalyzerResponse,
+    RewriteRecordListRequest,
+    RewriteRecordListResponse
 )
 from .models.topic_models import (
     TopicCreateRequest,
@@ -31,7 +34,9 @@ from .models.topic_models import (
     TopicListResponse,
     TopicHierarchyResponse,
     StyleListResponse,
-    AssociatedStyleResponse
+    AssociatedStyleResponse,
+    AssociateStyleRequest,
+    AssociateStyleResponse
 )
 
 style_router = APIRouter(prefix="/api/v1/style", tags=["风格分析"])
@@ -54,6 +59,18 @@ async def rewrite_content_endpoint(request: RewriteRequest):
     """
     return await rewrite_content(request)
 
+@rewrite_router.post("/records", response_model=RewriteRecordListResponse)
+async def get_rewrite_records_endpoint(request: RewriteRecordListRequest):
+    """
+    获取重写记录列表（支持分页）
+    
+    Args:
+        request: 分页请求参数
+        
+    Returns:
+        RewriteRecordListResponse: 重写记录列表响应
+    """
+    return get_rewrite_records(page=request.page, page_size=request.page_size)
 
 
 # 添加选题管理路由
@@ -98,3 +115,8 @@ async def get_style_list_endpoint():
 async def get_associated_styles_endpoint(topic_id: int):
     """获取某选题关联的风格列表"""
     return  get_associated_styles(topic_id)
+
+@topic_router.post("/associate-style", response_model=AssociateStyleResponse)
+async def associate_style_endpoint(request: AssociateStyleRequest):
+    """关联选题和风格"""
+    return  associate_style(request)

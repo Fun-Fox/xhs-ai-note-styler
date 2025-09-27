@@ -68,11 +68,17 @@ class Topic(Base):
         """
         将对象转换为字典格式
         """
+        # 获取父级选题名称
+        parent_name = None
+        if self.parent:
+            parent_name = self.parent.name
+            
         return {
             'id': self.id,
             'name': self.name,
             'level': self.level,
             'parent_id': self.parent_id,
+            'parent_name': parent_name,
             'description': self.description,
             'created_at': self.created_at.isoformat() if self.created_at else None
         }
@@ -100,6 +106,49 @@ class TopicStyleAssociation(Base):
             'id': self.id,
             'topic_id': self.topic_id,
             'style_id': self.style_id,
+            'created_at': self.created_at.isoformat() if self.created_at else None
+        }
+
+
+class RewriteRecord(Base):
+    """
+    文稿二创执行记录模型
+    """
+    __tablename__ = 'rewrite_records'
+    
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    # 用户选择的风格名称
+    style_name = Column(String(255), nullable=False)
+    # 用户任务描述
+    user_task = Column(Text, nullable=False)
+    # 字数要求
+    word_count = Column(String(50), nullable=True)
+    # 生成的标题
+    generated_title = Column(String(255), nullable=False)
+    # 生成的内容
+    generated_content = Column(Text, nullable=False)
+    # 生成的标签
+    generated_tags = Column(Text, nullable=True)
+    # 执行时间（秒）
+    execution_time = Column(String(20), nullable=True)
+    created_at = Column(DateTime, default=datetime.now)
+    
+    def __repr__(self):
+        return f"<RewriteRecord(style_name='{self.style_name}', generated_title='{self.generated_title}')>"
+        
+    def to_dict(self):
+        """
+        将对象转换为字典格式
+        """
+        return {
+            'id': self.id,
+            'style_name': self.style_name,
+            'user_task': self.user_task,
+            'word_count': self.word_count,
+            'generated_title': self.generated_title,
+            'generated_content': self.generated_content,
+            'generated_tags': self.generated_tags,
+            'execution_time': self.execution_time,
             'created_at': self.created_at.isoformat() if self.created_at else None
         }
 

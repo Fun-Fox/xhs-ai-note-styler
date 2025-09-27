@@ -52,3 +52,13 @@ class AssociatedStyleResponse(BaseModel):
     success: bool
     data: Optional[List[dict]] = None
     message: str
+
+class AssociateStyleRequest(BaseModel):
+    """关联选题和风格请求模型"""
+    topic_id: int
+    style_id: int
+
+class AssociateStyleResponse(BaseModel):
+    """关联选题和风格响应模型"""
+    success: bool
+    message: str

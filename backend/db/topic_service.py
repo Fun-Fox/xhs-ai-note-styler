@@ -5,7 +5,7 @@
 
 from .db_models import Topic, TopicStyleAssociation, StyleAnalysis, get_session
 from typing import List, Dict, Optional
-
+from sqlalchemy.orm import joinedload
 
 class TopicService:
     """
@@ -38,6 +38,10 @@ class TopicService:
             session.add(topic)
             session.commit()
             session.refresh(topic)
+            # 预加载parent关系以避免懒加载问题
+            session.refresh(topic)
+            if topic.parent_id:
+                _ = topic.parent  # 触发加载parent对象
             return topic
         except Exception as e:
             session.rollback()
@@ -130,6 +134,9 @@ class TopicService:
         session = get_session()
         try:
             query = session.query(Topic)
+            # 预加载parent关系以避免懒加载问题
+            query = query.options(joinedload(Topic.parent))
+                
             if level is not None:
                 query = query.filter(Topic.level == level)
             if parent_id is not None:

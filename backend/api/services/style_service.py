@@ -1,28 +1,27 @@
 """
-风格分析服务模块
-处理风格分析和内容重写相关的业务逻辑
+风格服务文件
+提供风格分析和内容重写服务
 """
 
 import time
-import asyncio
-import sys
-import os
+from typing import List
+from sqlalchemy import func
 
-# 添加项目根目录到Python路径
-project_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-if project_root not in sys.path:
-    sys.path.append(project_root)
-
-from typing import Dict, Any, List
+from backend.agent import get_copycat_agent
+from backend.db import style_analysis_service, rewrite_record_service
+from backend.db.db_models import RewriteRecord
+from backend.db.style_service import get_session
+from backend.utils.logger import info as logger_info, error
 from ..models.style_models import (
-    StyleAnalyzerRequest, 
+    StyleAnalyzerRequest,
     StyleAnalyzerResponse, 
-    RewriteRequest, 
+    RewriteRequest,
     RewriteResponse,
     UrlAnalyzerRequest,
     UrlAnalyzerResponse,
     NoteContent,
-    StyleAnalysisResult
+    StyleAnalysisResult,
+    RewriteRecordListResponse
 )
 
 # 配置日志
@@ -38,8 +37,8 @@ from backend.agent import get_analyze_style_agent, save_analysis_result_async
 from backend.agent import get_copycat_agent
 
 # 导入数据库服务
-from backend.db import style_analysis_service
-
+from backend.db import style_analysis_service, rewrite_record_service
+import asyncio
 
 
 def analyze_style(request: StyleAnalyzerRequest) -> StyleAnalyzerResponse:
@@ -187,6 +186,17 @@ async def rewrite_content(request: RewriteRequest) -> RewriteResponse:
             execution_time = time.time() - start_time
             logger_info(f"内容重写完成，耗时: {execution_time:.2f}秒")
             
+            # 保存执行记录到数据库
+            rewrite_record_service.create_rewrite_record(
+                style_name=style_info.get('style_name'),
+                user_task=request.user_task,
+                word_count=style_info.get('word_count'),
+                generated_title=arguments_dict['title'],
+                generated_content=arguments_dict['content'],
+                generated_tags=arguments_dict['tags'],
+                execution_time=str(execution_time)
+            )
+            
             return RewriteResponse(
                 success=True,
                 title=arguments_dict['title'],
@@ -295,3 +305,48 @@ async def analyze_url_styles(request: UrlAnalyzerRequest) -> UrlAnalyzerResponse
         execution_time = time.time() - start_time
         logger_error(f"URL分析失败: {str(e)}")
         raise Exception(f"URL分析失败: {str(e)}")
+
+
+def get_rewrite_records(page: int = 1, page_size: int = 10) -> RewriteRecordListResponse:
+    """
+    获取重写记录列表（支持分页）
+    
+    Args:
+        page: 页码，从1开始
+        page_size: 每页记录数
+        
+    Returns:
+        RewriteRecordListResponse: 重写记录列表响应
+    """
+    session = get_session()
+    try:
+        # 计算偏移量
+        offset = (page - 1) * page_size
+        
+        # 查询记录列表
+        records = session.query(RewriteRecord).order_by(
+            RewriteRecord.created_at.desc()
+        ).offset(offset).limit(page_size).all()
+        
+        # 查询总记录数
+        total = session.query(func.count(RewriteRecord.id)).scalar()
+        
+        # 转换为字典列表
+        data = [record.to_dict() for record in records]
+        
+        # 构造响应
+        response = RewriteRecordListResponse(
+            success=True,
+            data=data,
+            total=total,
+            page=page,
+            page_size=page_size,
+            total_pages=(total + page_size - 1) // page_size  # 向上取整计算总页数
+        )
+        
+        return response
+    except Exception as e:
+        error(f"获取重写记录列表失败: {str(e)}")
+        raise Exception(f"获取重写记录列表失败: {str(e)}")
+    finally:
+        session.close()

@@ -39,6 +39,35 @@ class RewriteResponse(BaseModel):
     execution_time: float
 
 
+class RewriteRecordItem(BaseModel):
+    """重写记录单项模型"""
+    id: int
+    style_name: str
+    user_task: str
+    word_count: Optional[str]
+    generated_title: str
+    generated_content: str
+    generated_tags: Optional[str]
+    execution_time: Optional[str]
+    created_at: str
+
+
+class RewriteRecordListRequest(BaseModel):
+    """重写记录列表请求模型"""
+    page: int = 1  # 页码，默认为第1页
+    page_size: int = 10  # 每页数量，默认为10条
+
+
+class RewriteRecordListResponse(BaseModel):
+    """重写记录列表响应模型"""
+    success: bool
+    data: List[RewriteRecordItem]
+    total: int
+    page: int
+    page_size: int
+    total_pages: int
+
+
 class UrlAnalyzerRequest(BaseModel):
     """URL分析请求模型"""
     urls: str  # 小红书URL，多个URL用空格分隔

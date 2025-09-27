@@ -3,14 +3,23 @@ const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:8
 
 // Topic相关接口
 export const topicApi = {
-  // 获取选题列表
-  list: async () => {
-    const response = await fetch(`${API_BASE_URL}/api/v1/topic/list`);
+  // 获取选题层级结构
+  hierarchy: async (parentId?: number) => {
+    const url = parentId 
+      ? `${API_BASE_URL}/api/v1/topic/hierarchy?parent_id=${parentId}`
+      : `${API_BASE_URL}/api/v1/topic/hierarchy`;
+    const response = await fetch(url);
     return response.json();
   },
 
-  // 创建选题
-  create: async (data: any) => {
+  // 获取选题关联的风格列表
+  associatedStyles: async (id: number) => {
+    const response = await fetch(`${API_BASE_URL}/api/v1/topic/style/associated/${id}`);
+    return response.json();
+  },
+
+  // 创建新选题
+  create: async (data: { name: string; level: number; parent_id: number | null; description: string | null }) => {
     const response = await fetch(`${API_BASE_URL}/api/v1/topic/create`, {
       method: 'POST',
       headers: {
@@ -21,14 +30,8 @@ export const topicApi = {
     return response.json();
   },
 
-  // 获取单个选题
-  get: async (id: number) => {
-    const response = await fetch(`${API_BASE_URL}/api/v1/topic/get/${id}`);
-    return response.json();
-  },
-
-  // 更新选题
-  update: async (id: number, data: any) => {
+  // 更新选题信息
+  update: async (id: number, data: { name: string; level: number; parent_id: number | null; description: string | null }) => {
     const response = await fetch(`${API_BASE_URL}/api/v1/topic/update/${id}`, {
       method: 'PUT',
       headers: {
@@ -47,18 +50,24 @@ export const topicApi = {
     return response.json();
   },
 
-  // 获取选题层级结构
-  hierarchy: async (parentId?: number) => {
-    const url = parentId 
-      ? `${API_BASE_URL}/api/v1/topic/hierarchy?parent_id=${parentId}`
-      : `${API_BASE_URL}/api/v1/topic/hierarchy`;
-    const response = await fetch(url);
+  // 关联风格
+  associateStyle: async (topicId: number, styleId: number) => {
+    const response = await fetch(`${API_BASE_URL}/api/v1/topic/associate-style`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        topic_id: topicId,
+        style_id: styleId
+      }),
+    });
     return response.json();
   },
-
-  // 获取选题关联的风格列表
-  associatedStyles: async (id: number) => {
-    const response = await fetch(`${API_BASE_URL}/api/v1/topic/style/associated/${id}`);
+  
+  // 获取风格列表
+  styleList: async () => {
+    const response = await fetch(`${API_BASE_URL}/api/v1/topic/style/list`);
     return response.json();
   }
 };
@@ -106,6 +115,18 @@ export const rewriteApi = {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(data),
+    });
+    return response.json();
+  },
+  
+  // 获取重写记录列表
+  listRecords: async (params: { page: number; page_size: number }) => {
+    const response = await fetch(`${API_BASE_URL}/api/v1/rewrite/records`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(params),
     });
     return response.json();
   }

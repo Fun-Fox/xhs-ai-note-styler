@@ -10,7 +10,9 @@ export default function Navigation() {
     { name: "首页", href: "/" },
     { name: "选题管理", href: "/topics" },
     { name: "风格分析", href: "/styles" },
+    { name: "风格列表", href: "/styles/list" },
     { name: "内容复写", href: "/rewrite" },
+    { name: "生成记录", href: "/rewrite/records" },
   ];
 
   return (

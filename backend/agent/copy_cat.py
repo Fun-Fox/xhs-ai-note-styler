@@ -76,7 +76,7 @@ def run_copycat_agent(style_info, user_task):
     
     Args:
         style_info (dict): 已分析的风格信息
-
+        user_task
     Returns:
         str: 生成的文案内容
     """

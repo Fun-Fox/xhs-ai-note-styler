@@ -81,12 +81,6 @@ export default function Home() {
                     建立选题库，支持多级分类管理，为内容创作提供方向指导和灵感来源。
                   </p>
                 </div>
-                <div className="bg-yellow-50 p-6 rounded-xl">
-                  <h3 className="text-xl font-semibold text-gray-800 mb-3">数据分析</h3>
-                  <p className="text-gray-600">
-                    提供详细的数据分析报告，帮助用户了解内容表现和优化方向。
-                  </p>
-                </div>
               </div>
             </div>
           )}

@@ -18,7 +18,9 @@ from ..models.topic_models import (
     TopicListResponse,
     TopicHierarchyResponse,
     StyleListResponse,
-    AssociatedStyleResponse
+    AssociatedStyleResponse,
+    AssociateStyleRequest,
+    AssociateStyleResponse
 )
 
 # 配置日志
@@ -55,6 +57,9 @@ def create_topic(request: TopicCreateRequest) -> TopicResponse:
         if request.style_ids:
             for style_id in request.style_ids:
                 topic_service.associate_style_with_topic(topic.id, style_id)
+        
+        # 确保parent关系已加载，避免懒加载错误
+        _ = topic.parent if topic.parent_id else None
         
         return TopicResponse(
             success=True,
@@ -294,3 +299,36 @@ def get_associated_styles(topic_id: int) -> AssociatedStyleResponse:
     except Exception as e:
         logger_error(f"获取关联写作风格时出错: {str(e)}")
         raise Exception(f"获取关联风格列表失败: {str(e)}")
+
+def associate_style(request: AssociateStyleRequest) -> AssociateStyleResponse:
+    """
+    关联选题和风格
+    
+    Args:
+        request (AssociateStyleRequest): 关联请求
+        
+    Returns:
+        AssociateStyleResponse: 关联响应
+    """
+    try:
+        # 验证选题是否存在
+        topic = topic_service.get_topic(request.topic_id)
+        if not topic:
+            raise Exception(f"选题ID {request.topic_id} 不存在")
+            
+        # 验证风格是否存在
+        style = style_analysis_service.get_style_analysis_by_id(request.style_id)
+        if not style:
+            raise Exception(f"风格ID {request.style_id} 不存在")
+            
+        # 关联选题和风格
+        topic_service.associate_style_with_topic(request.topic_id, request.style_id)
+        
+        return AssociateStyleResponse(
+            success=True,
+            message="选题与风格关联成功"
+        )
+        
+    except Exception as e:
+        logger_error(f"关联选题和风格时出错: {str(e)}")
+        raise Exception(f"关联选题和风格失败: {str(e)}")
